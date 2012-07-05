@@ -33,7 +33,7 @@ using System.IO;
 
 namespace OpenTween
 {
-    public class HttpTwitter : ICloneable
+    public class HttpWeibo : ICloneable
     {
         //OAuth関連
         ///<summary>

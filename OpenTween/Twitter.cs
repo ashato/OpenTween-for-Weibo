@@ -24,23 +24,24 @@
 // the Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
 // Boston, MA 02110-1301, USA.
 
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Reflection;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Web;
+using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
-using System;
-using System.Reflection;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Windows.Forms;
+using OpenTween.Connection;
 
 namespace OpenTween
 {
@@ -147,6 +148,8 @@ namespace OpenTween
         //private FavoriteQueue favQueue;
 
         private HttpTwitter twCon = new HttpTwitter();
+
+        private HttpWeibo twWeibo = new HttpWeibo();
 
         //private List<PostClass> _deletemessages = new List<PostClass>();
 
